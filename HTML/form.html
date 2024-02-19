@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form Attributes Example</title>
+  </head>
+  <body>
+    <form action="/submit" method="post">
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter your username"
+        required
+        autofocus
+      />
+
+      <br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        minlength="8"
+        maxlength="16"
+        required
+      />
+
+      <br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" max="2004-01-01" required />
+
+      <br />
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <br />
+
+      <input type="checkbox" id="subscribe" name="subscribe" checked />
+      <label for="subscribe">Subscribe to newsletter</label>
+
+      <br />
+
+      <input
+        type="radio"
+        id="option1"
+        name="radioGroup"
+        value="option1"
+        checked
+      />
+
+      <label for="option1">Option 1</label>
+
+
+      <input type="radio" id="option2" name="radioGroup" value="option2" />
+      <label for="option2">Option 2</label>
+
+      <br />
+      <input type="color" name="" id=""><br>
+      
+      <input type="file" name="" id="">
+      <br>
+      <input type="number" name="" id="">
+      <br/>
+
+      <input type="range" name="vol" min="10" max="100" id="vol" step="10">
+      <br/>
+
+
+<br/>
+      <button type="submit">Submit</button>
+      <button type="reset">reset</button>
+    </form>
+
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="search in youtube" name="search_query">
+        <button>search</button>
+
+    </form>
+  </body>
+</html>
